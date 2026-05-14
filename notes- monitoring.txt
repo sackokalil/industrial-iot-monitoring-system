@@ -1,0 +1,208 @@
+
+
+------------------Créer un fichier de log et loger des info dans ça-------------------
+1) Créer un fichier logbacks nommé : logback-spring.xml dans le dossier 'resources' du main du projet avec ce contenu : 
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/mqtt.log</file>
+        <append>false</append> <!-- Override at every restart of the application, making it true will allow to append the file -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
+
+
+
+La balise <file> ici contient le nom du fichier(mqtt.log) dans le quell les logs seront  enregistré; ce ficher se trouvera dans un dossieer nommé 'logs' qui sera créer à la racine du projet.
+Avec la balise <append> on peut definir si le fichier doit etre écransé à chaque nouvelle lancement du serveur(ici c'est le cas, il est a false. Le mettre à true permettra d'ajouter les log à la suite de ce qui s'y trouve déjà à chaque fois qu'on relace le serveur)
+
+2) Definir dans le fichier application.properties le niveau de log(c'est à dir est ce qu'il faut  loger les Debug, les Error, Les Warn, etc...), ci dessous un exemple de ces definition : 
+
+
+#------ Reduce the logs to the strict minimum------
+logging.level.root=ERROR
+logging.level.org.springframework=ERROR
+logging.level.org.mongodb=ERROR
+# My own logs in my classes : TRACE < DEBUG < INFO < WARN < ERROR. Here only INFO < WARN < ERROR are taken into account
+# in my package(that's to say : log.info, log.warn, and log.error; because the hierarchie is from low to above.
+logging.level.bo.ms.informatik.mqttproject=INFO  
+
+
+
+
+
+
+-------------------------Mettre un service de monitoring pour mon application MQTT---------------------------------
+
+1)Activer Spring Boot Actuator et Prometheus dans Le projet MQTT(ajouter leurs dependances dans le fichier pom.xml)
+
+2)Configurer Prometheus pour récupérer les métriques de Spring Boot(dans application.properties):
+
+
+# Activate all the endpoints
+management.endpoints.web.exposure.include=* 
+# Activate default port
+management.server.port=8080
+#Compatible Format  Prometheus
+management.prometheus.metrics.export.enabled=true
+
+
+3)Lancer Prometheus et Grafana dans Docker:
+
+--Pour prometheus : 
+-créer un fichier .yml avec le contenu ci-dessous et l'enregistrer à la racine du projet
+
+
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'mqtt-spring-app'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+
+
+
+ici : 
+localhost:8080 = Le backend Spring Boot
+/actuator/prometheus = endpoint des métriques
+
+
+Ouvrire un terminal et lancer le telechargement du prometheus dans docker avec la commande suivante : 
+
+
+docker run -d ^
+  -p 9090:9090 ^
+  -v "D:\Master\Soft.Qualitaet\Ubungen2025\mqtt-project\src/prometheus.yml:/etc/prometheus/prometheus.yml" ^
+  --name prometheus ^
+  prom/prometheus
+
+
+à noter que : D:\Master\Soft.Qualitaet\Ubungen2025\mqtt-project\src/prometheus.yml  est l'emplacement du fichier yml créé.
+
+prometheus sera ainsi telechargé et exposé dans un container à l'addresse localhost:9090
+
+
+
+
+---Pour grafana----------- on installe dans le docker avec la commande:
+
+docker run -d -p 3000:3000 --name=grafana grafana/grafana
+
+grafana sera installé dans docker et livré dans un container à l'addresse : http://localhost:3000; il utilise par defaut: admin et admin comme identifiant et mot de passe.
+
+4) Tester les metrics spring boot : 
+	lancer l'application spring boot
+	puis ouvrire : http://localhost:8080/actuator/prometheus
+
+si tout marche bien, on devrait voir les metrics en forme de text.
+c'est exactement ce que promethus va lire.
+
+
+5)Verifier dans promethus:
+
+aller sur http://localhost:9090
+dans la barre de recherche taper : 
+
+	up
+
+si tout marche bien, on devrait voire quelque chose qui ressemble à :
+
+up{instance="host.docker.internal:8080", job="mqtt-spring-app"}  1
+
+Le 1 signifie :
+“Prometheus arrive bien à contacter l'application.”(0 serait le contraire)
+
+
+6)Connecter Grafana à Prometheus:
+
+Dans Grafana : Menu gauche :
+
+Connections
+→ Add new connections
+
+
+Choisis : Prometheus(rechercher et double cliquer dessus)
+
+→ Add new data source
+URL :
+
+http://host.docker.internal:9090
+
+Puis : Save & Test
+
+Tu devrais voir : Successfully queried the Prometheus API
+
+7) Créer un Dashboard
+
+Dans Grafana :
+
+Dashboards
+→ New
+→ New Dashboard
+→ Add Visualization
+
+Choisis :
+
+Data Source = Prometheus
+
+Puis dans query :
+
+jvm_memory_used_bytes
+
+ou :
+
+system_cpu_usage
+
+ou :
+
+http_server_requests_seconds_count
+
+Puis :
+
+Run Query
+
+Et boom 
+Tu verras les graphes.
+
+
+-----------------------Utilisation de jaCoCo--------------------------------
+
+pour utiliser jaCoCo afin de voir un rapport des tests, on ajoute au pom.xml le plusging de jacoco:
+
+
+<!-- jaCoCo plugin -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+et ainsi on peut executer la commande :  mvn clean verify    pour Builder le rapport des tes. et ce rapport est accessible  dans  target/site/jacoco/index.html
+
+

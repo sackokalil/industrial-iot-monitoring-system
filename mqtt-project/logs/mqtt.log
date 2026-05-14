@@ -1,0 +1,1359 @@
+2026-05-14 20:12:57 [INFO] - Starting MqttProjectApplication using Java 21.0.6 with PID 2440 (D:\Master\MASTERPROJECTS\SOFT. QUALITY\SPS\mqtt-project\target\classes started by kalil in D:\Master\MASTERPROJECTS\SOFT. QUALITY\SPS\mqtt-project)
+2026-05-14 20:12:57 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2026-05-14 20:12:58 [INFO] - Started MqttProjectApplication in 1.584 seconds (process running for 1.916)
+2026-05-14 20:12:58 [INFO] - STARTING MQTT PROJECT APPLICATION
+2026-05-14 20:13:01 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:01 [INFO] - POST /connect -> Starting MQTT connection...
+2026-05-14 20:13:01 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:01 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:01 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:01 [INFO] - Connecting to MQTT broker...
+2026-05-14 20:13:02 [INFO] - Successfully connected to MQTT broker.
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:02 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:02 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:02 [INFO] - Subscribed to topics: Wago750/Status, S7_1500/Temperatur/Ist, S7_1500/Temperatur/Soll, S7_1500/Temperatur/Differenz
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:02 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:02 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:02 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:02 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:02 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:02 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:03 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:03 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:03 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:03 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:03 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:03 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:04 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:04 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:04 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:04 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:05 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:05 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:05 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:05 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:05 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:05 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:06 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:06 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:06 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:06 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:06 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:06 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:07 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:07 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:07 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:07 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:07 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:07 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:08 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:08 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:08 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:08 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:08 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:08 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:09 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:09 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:09 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:09 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:09 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:09 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:10 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:10 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:10 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:10 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:10 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:10 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5100002288818359
+2026-05-14 20:13:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5100002288818359
+2026-05-14 20:13:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.389999389648438
+2026-05-14 20:13:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.389999389648438
+2026-05-14 20:13:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:11 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:11 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:11 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:11 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:11 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:11 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:12 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:12 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:12 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:12 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:12 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:12 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:13 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:13 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:13 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:13 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:13 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:13 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:14 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:14 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:14 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:14 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:14 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:14 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:15 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:15 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:15 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:15 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:15 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:15 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:16 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:16 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:16 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:16 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:16 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:16 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:17 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:17 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:17 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:17 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:17 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:17 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:18 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:18 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:18 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:18 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:18 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:18 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:19 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:19 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:19 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:19 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:19 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:19 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:19 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:19 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:19 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:19 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:19 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:19 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:19 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:19 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:19 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:19 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:20 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:20 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:20 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:20 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:20 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:20 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:20 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:20 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:20 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:20 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:20 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:20 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:20 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:20 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:20 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:20 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:21 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:21 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:21 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:21 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:21 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:21 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:21 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:21 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:21 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:21 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:21 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:21 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:21 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:21 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:21 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:21 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:22 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:22 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:22 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:22 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:22 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:22 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:22 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:22 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:22 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:22 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:22 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:22 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:22 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:22 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:22 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:22 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:23 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.8799991607666
+2026-05-14 20:13:23 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.8799991607666
+2026-05-14 20:13:23 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:23 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:23 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:23 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:23 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:23 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:23 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:23 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:23 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:23 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:23 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:23 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:23 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:23 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:24 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:24 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:24 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:24 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:24 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:24 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:24 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.40999984741211
+2026-05-14 20:13:24 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.40999984741211
+2026-05-14 20:13:24 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:24 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:24 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:24 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:24 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:24 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:24 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:24 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:25 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:25 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:25 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:25 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:25 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:25 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:26 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:26 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:26 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:26 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:26 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:26 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:27 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:27 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:27 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:27 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:27 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:27 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:28 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:28 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:28 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:28 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:28 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:28 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:29 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:29 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:29 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:29 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:29 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:29 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:30 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:30 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:30 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:30 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:30 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:30 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:30 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.440000534057617
+2026-05-14 20:13:30 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.440000534057617
+2026-05-14 20:13:30 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:30 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:30 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:30 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:30 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:30 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:30 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:30 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:31 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:31 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:31 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:31 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5400009155273438
+2026-05-14 20:13:31 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5400009155273438
+2026-05-14 20:13:31 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:31 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.450000762939453
+2026-05-14 20:13:31 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.450000762939453
+2026-05-14 20:13:31 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:31 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:31 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:31 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:31 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:31 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:31 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:31 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:32 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.90999984741211
+2026-05-14 20:13:32 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.90999984741211
+2026-05-14 20:13:32 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:32 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:32 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:32 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:32 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.450000762939453
+2026-05-14 20:13:32 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.450000762939453
+2026-05-14 20:13:32 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:32 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:32 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:32 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:32 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:32 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:32 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:32 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:33 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:33 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:33 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:33 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:33 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:33 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:33 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.450000762939453
+2026-05-14 20:13:33 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.450000762939453
+2026-05-14 20:13:33 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:33 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:33 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:33 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:33 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:33 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:33 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:33 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:34 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:34 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:34 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:34 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:34 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:34 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:34 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.450000762939453
+2026-05-14 20:13:34 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.450000762939453
+2026-05-14 20:13:34 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:34 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:34 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:34 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:34 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:34 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:34 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:34 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:35 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:35 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:35 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:35 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5300006866455078
+2026-05-14 20:13:35 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5300006866455078
+2026-05-14 20:13:35 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:35 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.450000762939453
+2026-05-14 20:13:35 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.450000762939453
+2026-05-14 20:13:35 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:35 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:35 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:35 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:35 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:35 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:35 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:35 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:36 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:36 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:36 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:36 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5599994659423828
+2026-05-14 20:13:36 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5599994659423828
+2026-05-14 20:13:36 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:36 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.479999542236328
+2026-05-14 20:13:36 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.479999542236328
+2026-05-14 20:13:36 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:36 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:36 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:36 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:36 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:36 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:36 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:36 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:37 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:37 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:37 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:37 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5599994659423828
+2026-05-14 20:13:37 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5599994659423828
+2026-05-14 20:13:37 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:37 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.479999542236328
+2026-05-14 20:13:37 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.479999542236328
+2026-05-14 20:13:37 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:37 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:37 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:37 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:37 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:37 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:37 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:37 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:38 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:38 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:38 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:38 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5599994659423828
+2026-05-14 20:13:38 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5599994659423828
+2026-05-14 20:13:38 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:38 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.479999542236328
+2026-05-14 20:13:38 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.479999542236328
+2026-05-14 20:13:38 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:38 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:38 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:38 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:38 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:38 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:38 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:38 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:39 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:39 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:39 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:39 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5599994659423828
+2026-05-14 20:13:39 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5599994659423828
+2026-05-14 20:13:39 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:39 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.479999542236328
+2026-05-14 20:13:39 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.479999542236328
+2026-05-14 20:13:39 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:39 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:39 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:39 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:39 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:39 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:39 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:39 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:40 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.920000076293945
+2026-05-14 20:13:40 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.920000076293945
+2026-05-14 20:13:40 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:40 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5399990081787109
+2026-05-14 20:13:40 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5399990081787109
+2026-05-14 20:13:40 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:40 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.479999542236328
+2026-05-14 20:13:40 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.479999542236328
+2026-05-14 20:13:40 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:40 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:40 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:40 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:40 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:40 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:40 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:40 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:41 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.940000534057617
+2026-05-14 20:13:41 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.940000534057617
+2026-05-14 20:13:41 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:41 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:13:41 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:13:41 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:41 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.489999771118164
+2026-05-14 20:13:41 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.489999771118164
+2026-05-14 20:13:41 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:41 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:41 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:41 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:41 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:41 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:41 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:41 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:42 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.940000534057617
+2026-05-14 20:13:42 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.940000534057617
+2026-05-14 20:13:42 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:42 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:13:42 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:13:42 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:42 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.489999771118164
+2026-05-14 20:13:42 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.489999771118164
+2026-05-14 20:13:42 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:42 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:42 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:42 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:42 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:42 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:42 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:42 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:43 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.940000534057617
+2026-05-14 20:13:43 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.940000534057617
+2026-05-14 20:13:43 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:43 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:13:43 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:13:43 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:43 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.489999771118164
+2026-05-14 20:13:43 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.489999771118164
+2026-05-14 20:13:43 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:43 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:43 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:43 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:43 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:43 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:43 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:43 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:44 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.940000534057617
+2026-05-14 20:13:44 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.940000534057617
+2026-05-14 20:13:44 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:44 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:13:44 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:13:44 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:44 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.489999771118164
+2026-05-14 20:13:44 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.489999771118164
+2026-05-14 20:13:44 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:44 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:44 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:44 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:44 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:44 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:44 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:44 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:45 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.940000534057617
+2026-05-14 20:13:45 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.940000534057617
+2026-05-14 20:13:45 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:45 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:13:45 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:13:45 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:45 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.489999771118164
+2026-05-14 20:13:45 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.489999771118164
+2026-05-14 20:13:45 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:45 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:45 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:45 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:45 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:45 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:45 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:45 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:46 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:46 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:46 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:46 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:46 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:46 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:46 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.510000228881836
+2026-05-14 20:13:46 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.510000228881836
+2026-05-14 20:13:46 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:46 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:46 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:46 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:46 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:46 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:46 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:46 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:46 [INFO] - POST /sendMode/3 -> Publishing mode to MQTT broker
+2026-05-14 20:13:46 [INFO] - PUBLISHING TO THE TOPIC: Wago750/Control | PAYLOAD: 3 .....
+2026-05-14 20:13:46 [INFO] - Delivery Complete
+2026-05-14 20:13:46 [INFO] - Message Published  to topic Wago750/Control | Payload: 3
+2026-05-14 20:13:47 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:47 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:47 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:47 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5500011444091797
+2026-05-14 20:13:47 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5500011444091797
+2026-05-14 20:13:47 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:47 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.510000228881836
+2026-05-14 20:13:47 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.510000228881836
+2026-05-14 20:13:47 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:47 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:13:47 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:13:47 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:47 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:47 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:47 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:47 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:48 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:48 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:48 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:48 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5500011444091797
+2026-05-14 20:13:48 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5500011444091797
+2026-05-14 20:13:48 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:48 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.510000228881836
+2026-05-14 20:13:48 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.510000228881836
+2026-05-14 20:13:48 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:48 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:13:48 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:13:48 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:48 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:48 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:48 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:48 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:49 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:49 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:49 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:49 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5500011444091797
+2026-05-14 20:13:49 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5500011444091797
+2026-05-14 20:13:49 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:49 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.510000228881836
+2026-05-14 20:13:49 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.510000228881836
+2026-05-14 20:13:49 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:49 [INFO] - POST /sendMode/2 -> Publishing mode to MQTT broker
+2026-05-14 20:13:49 [INFO] - PUBLISHING TO THE TOPIC: Wago750/Control | PAYLOAD: 2 .....
+2026-05-14 20:13:49 [INFO] - Delivery Complete
+2026-05-14 20:13:49 [INFO] - Message Published  to topic Wago750/Control | Payload: 2
+2026-05-14 20:13:49 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:13:49 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:13:49 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:49 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:49 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:49 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:49 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:50 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:50 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:50 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:50 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5800018310546875
+2026-05-14 20:13:50 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5800018310546875
+2026-05-14 20:13:50 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:50 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.540000915527344
+2026-05-14 20:13:50 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.540000915527344
+2026-05-14 20:13:50 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:50 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [64]
+2026-05-14 20:13:50 [INFO] - Wago750/Status detected | Value: 64 | Binary: 0000000001000000
+2026-05-14 20:13:50 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:50 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:50 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:50 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:50 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:51 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:51 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:51 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:51 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5800018310546875
+2026-05-14 20:13:51 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5800018310546875
+2026-05-14 20:13:51 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:51 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.540000915527344
+2026-05-14 20:13:51 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.540000915527344
+2026-05-14 20:13:51 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:51 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [128]
+2026-05-14 20:13:51 [INFO] - Wago750/Status detected | Value: 128 | Binary: 0000000010000000
+2026-05-14 20:13:51 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:51 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:51 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:51 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:51 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:52 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.959999084472656
+2026-05-14 20:13:52 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.959999084472656
+2026-05-14 20:13:52 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:52 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5800018310546875
+2026-05-14 20:13:52 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5800018310546875
+2026-05-14 20:13:52 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:52 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.540000915527344
+2026-05-14 20:13:52 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.540000915527344
+2026-05-14 20:13:52 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:52 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [32768]
+2026-05-14 20:13:52 [INFO] - Wago750/Status detected | Value: 32768 | Binary: 1000000000000000
+2026-05-14 20:13:52 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:52 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:52 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:52 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:52 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:52 [INFO] - POST /sendMode/1 -> Publishing mode to MQTT broker
+2026-05-14 20:13:52 [INFO] - PUBLISHING TO THE TOPIC: Wago750/Control | PAYLOAD: 1 .....
+2026-05-14 20:13:52 [INFO] - Message Published  to topic Wago750/Control | Payload: 1
+2026-05-14 20:13:52 [INFO] - Delivery Complete
+2026-05-14 20:13:53 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:53 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:53 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:53 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5600013732910156
+2026-05-14 20:13:53 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5600013732910156
+2026-05-14 20:13:53 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:53 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.540000915527344
+2026-05-14 20:13:53 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.540000915527344
+2026-05-14 20:13:53 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:53 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [255]
+2026-05-14 20:13:53 [INFO] - Wago750/Status detected | Value: 255 | Binary: 0000000011111111
+2026-05-14 20:13:53 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:53 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:53 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:53 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:53 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:54 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:54 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:54 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:54 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:54 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:54 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:54 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:54 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:54 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:54 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [65280]
+2026-05-14 20:13:54 [INFO] - Wago750/Status detected | Value: 65280 | Binary: 1111111100000000
+2026-05-14 20:13:54 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:54 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:54 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:54 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:54 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:55 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:55 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:55 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:55 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:55 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:55 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:55 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:55 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:55 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:55 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [255]
+2026-05-14 20:13:55 [INFO] - Wago750/Status detected | Value: 255 | Binary: 0000000011111111
+2026-05-14 20:13:55 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:55 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:55 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:55 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:55 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:56 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:56 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:56 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:56 [INFO] - POST /sendMode/0 -> Publishing mode to MQTT broker
+2026-05-14 20:13:56 [INFO] - PUBLISHING TO THE TOPIC: Wago750/Control | PAYLOAD: 0 .....
+2026-05-14 20:13:56 [INFO] - Delivery Complete
+2026-05-14 20:13:56 [INFO] - Message Published  to topic Wago750/Control | Payload: 0
+2026-05-14 20:13:56 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:56 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:56 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:56 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:56 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:56 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:56 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [0]
+2026-05-14 20:13:56 [INFO] - Wago750/Status detected | Value: 0 | Binary: 0000000000000000
+2026-05-14 20:13:56 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:56 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:56 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:56 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:56 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:57 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:57 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:57 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:57 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:57 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:57 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:57 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:57 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:57 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:57 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [0]
+2026-05-14 20:13:57 [INFO] - Wago750/Status detected | Value: 0 | Binary: 0000000000000000
+2026-05-14 20:13:57 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:57 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:57 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:57 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:57 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:58 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:58 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:58 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:58 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:58 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:58 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:58 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:58 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:58 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:58 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [0]
+2026-05-14 20:13:58 [INFO] - Wago750/Status detected | Value: 0 | Binary: 0000000000000000
+2026-05-14 20:13:58 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:58 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:58 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:13:58 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:58 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:59 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:13:59 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:13:59 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:13:59 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:13:59 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:13:59 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:13:59 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:13:59 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:13:59 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:13:59 [INFO] - POST /sendMode/3 -> Publishing mode to MQTT broker
+2026-05-14 20:13:59 [INFO] - PUBLISHING TO THE TOPIC: Wago750/Control | PAYLOAD: 3 .....
+2026-05-14 20:13:59 [INFO] - Message Published  to topic Wago750/Control | Payload: 3
+2026-05-14 20:13:59 [INFO] - Delivery Complete
+2026-05-14 20:13:59 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:13:59 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:13:59 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:13:59 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:13:59 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:13:59 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:13:59 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:00 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 23.979999542236328
+2026-05-14 20:14:00 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 23.979999542236328
+2026-05-14 20:14:00 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:00 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5699996948242188
+2026-05-14 20:14:00 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5699996948242188
+2026-05-14 20:14:00 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:00 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.549999237060547
+2026-05-14 20:14:00 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.549999237060547
+2026-05-14 20:14:00 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:00 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:14:00 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:14:00 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:00 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:00 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:00 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:00 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:01 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:01 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:01 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:01 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:01 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:01 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:01 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:01 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:01 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:01 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:01 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:01 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:01 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:01 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:01 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:01 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:02 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:02 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:02 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:02 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:02 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:02 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:02 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:02 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:02 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:03 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:03 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:03 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:14:03 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:14:03 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:03 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:03 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:03 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:03 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:04 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:04 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:04 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:04 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:04 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:04 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:04 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:04 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:04 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:05 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:05 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:05 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:05 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:05 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:05 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:05 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:05 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:05 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:06 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:06 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:06 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:14:06 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:14:06 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:06 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:06 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:06 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:06 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:07 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:07 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:07 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:07 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:07 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:07 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:07 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:07 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:07 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5499992370605469
+2026-05-14 20:14:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5499992370605469
+2026-05-14 20:14:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.559999465942383
+2026-05-14 20:14:08 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.559999465942383
+2026-05-14 20:14:08 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:08 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:08 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:08 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:08 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:08 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:08 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:08 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:09 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:09 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:09 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:14:09 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:14:09 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:09 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:09 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:09 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:09 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:10 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:10 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:10 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:10 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:10 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:10 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:10 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:10 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:10 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:11 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:11 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:11 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:11 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:11 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:11 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:11 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:11 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:11 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:12 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:12 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:12 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:14:12 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:14:12 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:12 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:12 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:12 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:12 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:13 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:13 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:13 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:13 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:13 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:13 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:13 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:13 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:13 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:14 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:14 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:14 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:14 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:14 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:14 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:14 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:14 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:14 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:15 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:15 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:15 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:14:15 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:14:15 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:15 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:15 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:15 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:15 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:16 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:16 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:16 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:16 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:16 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:16 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:16 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:16 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:16 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:17 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:17 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:17 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:17 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:17 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:17 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:17 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:17 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:17 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:18 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:18 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:18 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [33153]
+2026-05-14 20:14:18 [INFO] - Wago750/Status detected | Value: 33153 | Binary: 1000000110000001
+2026-05-14 20:14:18 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:18 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:18 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:18 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:18 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:18 [INFO] - POST /disconnect -> Disconnecting MQTT client
+2026-05-14 20:14:18 [INFO] - MQTT client fully disconnected and closed
+2026-05-14 20:14:25 [INFO] - POST /connect -> Starting MQTT connection...
+2026-05-14 20:14:25 [INFO] - Creating new MQTT client and setting connection options...
+2026-05-14 20:14:25 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:25 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:25 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:25 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:25 [INFO] - Connecting to MQTT broker...
+2026-05-14 20:14:25 [INFO] - Successfully connected to MQTT broker.
+2026-05-14 20:14:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:25 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:25 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:25 [INFO] - Subscribed to topics: Wago750/Status, S7_1500/Temperatur/Ist, S7_1500/Temperatur/Soll, S7_1500/Temperatur/Differenz
+2026-05-14 20:14:25 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:25 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:25 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:26 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:26 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:26 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:26 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:26 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:26 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:26 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:26 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:26 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:27 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:27 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:27 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [6168]
+2026-05-14 20:14:27 [INFO] - Wago750/Status detected | Value: 6168 | Binary: 0001100000011000
+2026-05-14 20:14:27 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:27 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:27 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:27 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:27 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:28 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:28 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:28 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [9252]
+2026-05-14 20:14:28 [INFO] - Wago750/Status detected | Value: 9252 | Binary: 0010010000100100
+2026-05-14 20:14:28 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:28 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:28 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:28 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:28 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Soll | PAYLOAD: 24.010000228881836
+2026-05-14 20:14:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Soll | Value: 24.010000228881836
+2026-05-14 20:14:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Soll
+2026-05-14 20:14:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Differenz | PAYLOAD: 0.5799999237060547
+2026-05-14 20:14:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Differenz | Value: 0.5799999237060547
+2026-05-14 20:14:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Differenz
+2026-05-14 20:14:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: S7_1500/Temperatur/Ist | PAYLOAD: 24.59000015258789
+2026-05-14 20:14:29 [INFO] - Temperature topic detected | Topic: S7_1500/Temperatur/Ist | Value: 24.59000015258789
+2026-05-14 20:14:29 [INFO] - Temperature document saved in MongoDB | Topic: S7_1500/Temperatur/Ist
+2026-05-14 20:14:29 [INFO] - NEW MESSAGE RECEIVED | TOPIC: Wago750/Status | PAYLOAD: [16962]
+2026-05-14 20:14:29 [INFO] - Wago750/Status detected | Value: 16962 | Binary: 0100001001000010
+2026-05-14 20:14:29 [INFO] - Status document saved in MongoDB | Topic: Wago750/Status
+2026-05-14 20:14:29 [INFO] - GET /ist -> Fetching current temperature
+2026-05-14 20:14:29 [INFO] - GET /diff -> Fetching temperature difference
+2026-05-14 20:14:29 [INFO] - GET /soll -> Fetching target temperature
+2026-05-14 20:14:29 [INFO] - GET /status -> Fetching last status from DB
+2026-05-14 20:14:29 [INFO] - POST /disconnect -> Disconnecting MQTT client
+2026-05-14 20:14:30 [INFO] - MQTT client fully disconnected and closed
