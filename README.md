@@ -247,6 +247,9 @@ The Angular frontend provides:
 
 The frontend communicates with the backend using REST APIs.
 
+![Frontent Control pannel](front-1.png)
+![Temperature Status](front-2.png)
+
 ---
 
 # Concepts Explored
