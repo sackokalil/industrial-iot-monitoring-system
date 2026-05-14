@@ -150,43 +150,7 @@ MongoDB entities include:
 - MessageDocument
 - LampMessageDocument
 - TemperatureMessageDocument
----
 
-# Backend Technologies
-
-The backend is implemented using:
-
-- Java
-- Spring Boot
-- Spring Data MongoDB
-- Eclipse Paho MQTT
-- REST APIs
-- Lombok
-- MongoDB
-
----
-
-# Frontend Technologies
-
-The frontend is implemented using:
-
-- Angular
-- TypeScript
-- HTML
-- CSS
-
-The UI page includes:
-
-- connection panel
-- lamp visualization grid
-- SPS mode control
-- temperature display
-
-Frontend styling is implemented in:
-
-```text
-styles.css
-```
 ---
 
 # MQTT Service Workflow
@@ -270,9 +234,14 @@ The frontend communicates with the backend using REST APIs.
 
 ## Backend
 
+- The backend is implemented using:
+
 - Java
 - Spring Boot
+- Spring Data MongoDB
 - Eclipse Paho MQTT
+- REST APIs
+- Lombok
 - MongoDB
 - Maven
 
