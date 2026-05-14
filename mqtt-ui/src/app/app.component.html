@@ -1,0 +1,75 @@
+<div class="container">
+
+  <header>
+    <h1>MQTT-BROKER Control Panel</h1>
+    <p class="subtitle">Manage your Wago 750 and S7-1500 systems easily</p>
+  </header>
+
+  <section class="connection-panel">
+    <button (click)="connect()" [disabled]="connected">Connect</button>
+    <button (click)="disconnect()" [disabled]="disconnected">Disconnect</button>
+    <button (click)="resetAll()" [disabled]="reset">Reset</button>
+
+    <div class="status-messages">
+      <p *ngIf="connected" class="connected">🟢 Connected - Automatic light status retrieval...</p>
+      <p *ngIf="disconnected" class="disconnected">🔴 Disconnected - click Connect</p>
+      <p *ngIf="reset" class="reset">🟠  Mode reset </p>
+    </div>
+  </section>
+
+  <section class="module">
+    <h2>SPS: Wago 750 - Lights Control</h2>
+
+    <div class="circle-grid">
+      <div *ngFor="let lampe of lampes" class="circle" [ngClass]="{'active': lampe}"></div>
+    </div>
+
+    <!--  OU
+      <div class="circle-grid">
+        <div *ngFor="let lampe of lampes" class="circle" [class.active]="lampe"></div>
+      </div>
+      -->
+
+    <div class="mode-selection">
+      <h3>Select Mode</h3>
+      <button (click)="sendMode('0')" [disabled]="modeDisable0">SPS Mode 0</button>
+      <button (click)="sendMode('1')" [disabled]="modeDisable1">SPS Mode 1</button>
+      <button (click)="sendMode('2')" [disabled]="modeDisable2">SPS Mode 2</button>
+      <button (click)="sendMode('3')" [disabled]="modeDisable3">SPS Mode 3</button>
+
+      <div [ngSwitch]="mod" class="mode-status">
+        <p *ngSwitchCase="'0'"><span class="lamp-on">⚪</span> SPS Mode 0 activated... <span class="lamp-on">🥷😡</span>  Turn on the light, don't get me angry..</p>
+        <p *ngSwitchCase="'1'"><span class="lamp-on">💡🔆</span> SPS Mode 1 activated... <span class="lamp-on">💃</span> Ohh.. we still have light</p>
+        <p *ngSwitchCase="'2'"><span class="lamp-on">💡🔆</span> SPS Mode 2 activated... <span class="lamp-on">💃</span> Ohh.. we still have light</p>
+        <p *ngSwitchCase="'3'"><span class="lamp-on">💡🔆</span> SPS Mode 3 activated... <span class="lamp-on">💃</span> Ohh.. we still have light</p>
+        <p *ngSwitchCase="'default'">the Last registered SPS Mode will be running after connection is established</p>
+        <p *ngSwitchCase="'lastMode'">the Last activated mode will be running after reconnection</p>
+        <p *ngSwitchDefault>Nof SPS Mode activated</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="module">
+    <h2>Light Status</h2>
+    <div class="values-box">
+      <div class="value-row">Light status: {{ lightStatus }}</div>
+    </div>
+  </section>
+
+  <section class="module">
+    <h2>SPS: S7-1500 - Temperature Control</h2>
+    <div class="values-box">
+      <div class="value-row">Ist-Wert: {{ ist }}</div>
+      <div class="value-row">Soll-Wert: {{ soll }}</div>
+      <div class="value-row">Differenz-Wert: {{ diff }}</div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOOOOTTTEERRR -->
+ <footer class="footer">
+   <p>Made with ❤️ by Sacko — MQTT Control Panel © 2025</p>
+ </footer>
+
+</div>
